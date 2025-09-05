@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.alert-container {
+    margin-top: 80px;
+    position: fixed;
+}
+
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("detect_img.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.7);
+    /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    padding: 2px;
+}
+
+.icon-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #680091;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.icon-button i {
+    margin-right: 1px;
+}
+
+.icon-button:hover {
+    background-color: rgb(2, 0, 19);
+}
+
+textarea {
+    height: 100px;
+}
+
+.container input[type="file"] {
+    display: none;
+}
+
+.container label {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px dashed;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container .url-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+
+.desc textarea {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    resize: vertical;
+    /* Allows vertical resizing only */
+}
+
+.container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #0056b3;
+}
+
+.home-icon {
+    position: fixed;
+    top: 10px;
+    /* Adjust the distance from the top */
+    left: 10px;
+    /* Adjust the distance from the left */
+    font-size: 24px;
+    /* Adjust the size of the icon */
+    color: #000;
+    /* Icon color */
+    text-decoration: none;
+    /* Remove underline */
+    background: rgba(255, 255, 255, 0.7);
+    /* Semi-transparent background */
+    padding: 10px;
+    /* Padding around the icon */
+    border-radius: 50%;
+    /* Make the background circle */
+    z-index: 1000;
+    /* Ensure it is on top of other elements */
+}
+
+.home-icon:hover {
+    color: #007BFF;
+    /* Change color on hover */
+    background: rgba(255, 255, 255, 1);
+    /* Change background on hover */
+}
+
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+}

@@ -4,18 +4,18 @@ A robust web-based solution for detecting deepfake images using advanced AI tech
 
 ## 🌟 Features
 
-- *Dual Detection Methods:*
+- **Dual Detection Methods:**
   - AI-powered deep learning model trained on 80,000+ images
   - Error Level Analysis (ELA) technique for secondary verification
-- *Flexible Input Options:*
+- **Flexible Input Options:**
   - Direct image upload
   - Image URL submission
-- *User-Friendly Interface:*
+- **User-Friendly Interface:**
   - Intuitive web interface
   - Real-time processing
   - Clear result visualization
 
-## 🛠 Technology Stack
+## 🛠️ Technology Stack
 
 ### Frontend
 - HTML5, CSS3, JavaScript
@@ -26,49 +26,49 @@ A robust web-based solution for detecting deepfake images using advanced AI tech
 
 ## 📋 Prerequisites
 
-bash
+```bash
 [List your prerequisites here]
 Example:
 - Python 3.8+
 - Node.js 14+
 - GPU (recommended for faster processing)
+```
 
-
-## ⚙ Installation
+## ⚙️ Installation
 
 1. Clone the repository
-bash
+```bash
 git clone https://github.com/yourusername/deepfake-detection.git
 cd deepfake-detection
-
+```
 
 2. Install dependencies
-bash
+```bash
 # Backend dependencies
 pip install -r requirements.txt
 
 # Frontend dependencies
 npm install
-
+```
 
 3. Set up environment variables
-bash
+```bash
 cp .env.example .env
 # Edit .env with your configuration
-
+```
 
 4. Start the application
-bash
+```bash
 # Start backend server
 python app.py
 
 # Start frontend development server
 npm start
-
+```
 
 ## 🚀 Usage
 
-1. Access the web interface at http://localhost:3000 (or your deployed URL)
+1. Access the web interface at `http://localhost:3000` (or your deployed URL)
 2. Navigate to the detection page
 3. Choose your input method:
    - Upload an image directly from your device
@@ -80,10 +80,10 @@ npm start
 
 ## 🧪 Model Information
 
-- *Training Dataset:* 80,000+ images
-- *Model Accuracy:* ~98%
-- *Architecture:* [Add model architecture details]
-- *Training Process:* [Brief description of training process]
+- **Training Dataset:** 80,000+ images
+- **Model Accuracy:** ~98%
+- **Architecture:** [Add model architecture details]
+- **Training Process:** [Brief description of training process]
 
 ## 📊 Performance Metrics
 
@@ -102,14 +102,14 @@ npm start
 We welcome contributions! Please follow these steps:
 
 1. Fork the repository
-2. Create a new branch (git checkout -b feature/amazing-feature)
-3. Commit your changes (git commit -m 'Add amazing feature')
-4. Push to the branch (git push origin feature/amazing-feature)
+2. Create a new branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
 ## 👥 Contact
 
-- Email: adrikaghoshwork123@gmail.com
+- Email: chakrabortyrohan.abc01@gmail.com
 
 
-Note: This project is for educational and research purposes. Please use responsibly and in accordance with applicable laws and regulations regarding deepfake detection and image analysis.
+*Note: This project is for educational and research purposes. Please use responsibly and in accordance with applicable laws and regulations regarding deepfake detection and image analysis.*

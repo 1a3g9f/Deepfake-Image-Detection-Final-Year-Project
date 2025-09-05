@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'StyleHome.css') }}">
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary" style="background-color: rgb(36, 1, 77) !important;">
+        <div class="container-fluid">
+            <a class="navbar-brand" style=" color: white !important;" href="#">
+                <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                Website_Name
+            </a>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="button" class="btn btn-outline-light"
+                    onclick="location.href = '{{ url_for('FAQs') }}'">FAQ</button>
+                <button type="button" class="btn btn-outline-light"
+                    onclick="location.href = '{{ url_for('Contact') }}'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-headset" viewBox="0 0 16 16">
+                        <path
+                            d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5" />
+                    </svg>
+                </button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                        data-bs-display="static" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-down-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm8.5 2.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z" />
+                        </svg>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Log In</a></li>
+                        <li><a class="dropdown-item" href="#">Sign Up</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>DEEPFAKE IMAGE DETECTION</h1>
+        <br>
+        <h2>
+            <p>Deep fake images represent a significant technological advancement and challenge in the realm of digital
+                media. Utilizing sophisticated machine learning algorithms, particularly those involving deep learning
+                and neural networks, deep fake technology can generate hyper-realistic images and videos that are nearly
+                indistinguishable from authentic ones. This technology leverages vast datasets to train models capable
+                of manipulating visual content to create entirely new images or alter existing ones with a high degree
+                of accuracy. While deep fakes offer intriguing possibilities for creative expression and entertainment,
+                they also pose serious ethical and security concerns. The ability to fabricate realistic images and
+                videos has implications for misinformation, fraud, and privacy, necessitating the development of robust
+                detection methods to safeguard against malicious uses. As deep fake technology continues to evolve,
+                understanding its mechanisms and implications becomes increasingly vital for both developers and the
+                general public.
+        </h2>
+        </p>
+        <form action="/detection">
+            <center><button style="background-color:black">Get Started</button></center>
+        </form>
+    </header>
+    <section class="guides">
+        <div class="guide">
+            <h3>WHY IS IT HELPFUL?</h3>
+            <p>Using a deepfake image detection webpage is crucial for safeguarding against digital misinformation and
+                protecting personal and organizational integrity. It enables users to quickly verify the authenticity of
+                images, preventing the spread of manipulated media that can harm reputations.</p>
+        </div>
+
+        <div class="guide">
+            <h3>SERVICES</h3>
+            <p>Our services in detecting fake images utilize advanced AI and machine learning algorithms to analyze and
+                verify image authenticity. We offer comprehensive solutions, including deepfake detection, image
+                characteristics, and provenance tracking.</p>
+        </div>
+
+        <div class="guide">
+            <h3>CONTACT</h3>
+            <p>Our contact support system is designed to provide efficient and personalized assistance to our
+                customers.Email through support@email.com, we will offer timely resolutions to queries, technical
+                issues, or feedback.For more,contact to the admin clicking on the icon at the top left corner.<br>Thank
+                You.</p>
+        </div>
+
+        <div class="guide">
+            <h3>DATA SECURITY</h3>
+            <p>we use industry-standard encryption to ensure that your data is protected during upload and processing.It
+                involves safeguarding personal and sensitive information embedded within images, such as location
+                metadata, faces, and identifiable objects.</p>
+        </div>
+
+        <div class="guide">
+            <h3>TERMS AND POLICY</h3>
+            <p>By uploading a photo to our platform, you agree to the following terms and conditions: You affirm that
+                you own the rights to the photo or have obtained proper permissions from the rightful owner. You grant
+                us a non-exclusive, royalty-free,
+                worldwide license to use,display and give you maximum approx results of the photo in connection with our
+                services.</p>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous"></script>F
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'StyleUpload.css') }}">
+</head>
+
+<body>
+    <div class="background"></div>
+    <nav class="navbar bg-body-tertiary" style="background-color: rgba(0, 0, 0, 0.0) !important;">
+        <div class="container-fluid">
+            <a class="navbar-brand" style=" color: white !important;" href="#">
+                <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                Website_Name
+            </a>
+            <div class="content" onclick="location.href = '{{ url_for('Home') }}'">
+                <button class="icon-button">
+                    <i class="fas fa-home"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <center>
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-weight: bold; color: white;">Result of analyzing
+            the image</h1>
+        <div class="container-fluid bd">
+            <div class="image">
+                <img src="{{Pathname}}" alt="Uploaded Image" id="image">
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var hoverImage = document.getElementById('image');
+
+                    hoverImage.addEventListener('mouseover', function () {
+                        hoverImage.style.cursor = "pointer";
+                        hoverImage.src = "static/Images/Image1.jpg"; // Path to the hover image
+                    });
+
+                    hoverImage.addEventListener('mouseout', function () {
+                        hoverImage.src = "static/Images/Image.jpg"; // Path to the original image
+                    });
+                });
+            </script>
+            <div class="text">
+                <table class="container">
+                    <thead>
+                        <tr>
+                            <th>
+                                <h1>Attribute</h1>
+                            </th>
+                            <th>
+                                <h1>Value</h1>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td>{{fname}}</td>
+                        </tr>
+                        <tr>
+                            <td>Description</td>
+                            <td>{{desc}}</td>
+                        </tr>
+                        <tr>
+                            <td>Software</td>
+                            <td>{{data}}</td>
+                        </tr>
+                        <tr>
+                            <td>Prediction Statement</td>
+                            <td>{{retstr}}</td>
+                        </tr>
+                        <tr>
+                            <td>Accuracy</td>
+                            <td>{{ac}}</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <th colspan="2">
+                            <div class="Nextpage">
+                                <!-- HTML !-->
+                                <button class="button-64" role="button"
+                                    onclick="location.href = '{{ url_for('NextPage') }}'">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-hypnotize" viewBox="0 0 16 16">
+                                            <path
+                                                d="m7.949 7.998.006-.003.003.009zm.025-.028v-.03l.018.01zm0 .015.04-.022.01.006v.04l-.029.016-.021-.012zm.049.057v-.014l-.008.01zm-.05-.008h.006l-.006.004z" />
+                                            <path fill-rule="evenodd"
+                                                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.965 1.69a6.97 6.97 0 0 1 3.861-.642c.722.767 1.177 1.887 1.177 3.135 0 1.656-.802 3.088-1.965 3.766 1.263.24 2.655-.815 3.406-2.742.38-.975.537-2.023.492-2.996a7.03 7.03 0 0 1 2.488 3.003c-.303 1.01-1.046 1.966-2.128 2.59-1.44.832-3.09.85-4.26.173l.008.021.012-.006-.01.01c.42 1.218 2.032 1.9 4.08 1.586a7.4 7.4 0 0 0 2.856-1.081 6.96 6.96 0 0 1-1.358 3.662c-1.03.248-2.235.084-3.322-.544-1.433-.827-2.272-2.236-2.279-3.58l-.012-.003c-.845.972-.63 2.71.666 4.327a7.4 7.4 0 0 0 2.37 1.935 6.97 6.97 0 0 1-3.86.65c-.727-.767-1.186-1.892-1.186-3.146 0-1.658.804-3.091 1.969-3.768l-.002-.007c-1.266-.25-2.666.805-3.42 2.74a7.4 7.4 0 0 0-.49 3.012 7.03 7.03 0 0 1-2.49-3.018C1.87 9.757 2.613 8.8 3.696 8.174c1.438-.83 3.084-.85 4.253-.176l.005-.006C7.538 6.77 5.924 6.085 3.872 6.4c-1.04.16-2.03.55-2.853 1.08a6.96 6.96 0 0 1 1.372-3.667l-.002.003c1.025-.243 2.224-.078 3.306.547 1.43.826 2.269 2.23 2.28 3.573L8 7.941c.837-.974.62-2.706-.673-4.319a7.4 7.4 0 0 0-2.362-1.931Z" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </th>
+                    </tfoot>
+
+                </table>
+            </div>
+        </div>
+
+    </center>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: rgb(17, 17, 248);
+    color: white;
+
+    padding: 60px 20px;
+    background-image: url("header_img.jpg");
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: ivory;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+section.guides {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #161718;
+    z-index: -1;
+
+
+
+}
+
+.guide {
+    line-height: normal;
+    box-sizing: content-box;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 40px 20px;
+    flex: 1 1 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-image: url("desc_img.jpg");
+    border: 1px solid white;
+}
+
+.guide p {
+
+    color: white;
+    padding-top: 5px;
+    font-size: 50x;
+    font-style: oblique;
+}
+
+.guide h3 {
+    font-weight: bolder;
+    font-size: medium;
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(85, 175, 248);
+}
+
+
+.home-icon {
+    position: absolute;
+    top: 10px;
+    /* Adjust the distance from the top */
+    left: 10px;
+    /* Adjust the distance from the left */
+    font-size: 24px;
+    /* Adjust the size of the icon */
+    color: #000;
+    /* Icon color */
+    text-decoration: none;
+    /* Remove underline */
+    background: white;
+    /* Semi-transparent background */
+    padding: 10px;
+    /* Padding around the icon */
+    border-radius: 50%;
+    /* Make the background circle */
+    z-index: 1000;
+    /* Ensure it is on top of other elements */
+
+}
+
+.home1-icon {
+    position: absolute;
+    top: 10px;
+    /* Adjust the distance from the top */
+    right: 10px;
+    /* Adjust the distance from the left */
+    font-size: 24px;
+    /* Adjust the size of the icon */
+    color: #000;
+    /* Icon color */
+    text-decoration: none;
+    /* Remove underline */
+    background: white;
+    /* Semi-transparent background */
+    padding: 10px;
+    /* Padding around the icon */
+    border-radius: 50%;
+    /* Make the background circle */
+    z-index: 1000;
+    /* Ensure it is on top of other elements */
+
+}
+
+.faq-button {
+    position: fixed;
+    top: 20px;
+    /* Adjust top position as needed */
+    right: 20px;
+    /* Adjust right position as needed */
+    z-index: 1000;
+    /* Ensure it's above other content */
+}
+
+#faq-toggle {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 2px;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#faq-toggle:hover {
+    background-color: white;
+}
+
+.btn_secondary {
+    background-color: #000;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+}
+
+
